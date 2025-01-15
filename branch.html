@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+         /* General */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #D4F4F9; 
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #00FFFF; 
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .navbar img {
+      height: 80px; /* Logo */
+    }
+
+    .navbar a {
+      color: #000;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .navbar a:hover {
+      color: #FFA500;
+    }
+
+    /* Dropdown menu styling */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #FFF;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #000;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #00FFFF;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: #00FFFF;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+      color: #000;
+      font-size: 1rem;
+      margin-top: auto;
+    }
+  /* Main Section */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .search-section {
+            margin-bottom: 30px;
+        }
+
+        .search-section h1 {
+            font-size: 2.5rem;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .search-bar {
+            margin-top: 15px;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            width: 350px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .search-bar button {
+            padding: 11px 20px;
+            background-color: #FF8000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .search-bar button:hover {
+            background-color: #CC6600;
+        }
+
+        /* Content Section */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .details {
+            flex: 1;
+            max-width: 400px;
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .details h2 {
+            color: #003366;
+        }
+
+        .branch {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .branch h3 {
+            margin: 0;
+            color: #FF8000;
+        }
+
+        .map {
+            flex: 2;
+            max-width: 600px;
+        }
+
+/* Footer Styling */
+    .footer {
+      background-color: #00FFFF;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      color: #000;
+      font-size: 1rem;
+      font-family: Arial, sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+  <div class="navbar">
+           <img src="C:\Users\User\Documents\logo.png" alt="Your Logo">
+     <div>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <a href="our_programs.html">Our Programs</a>
+        <div class="dropdown-content">
+          <a href="mathematics.html">Mathematics</a>
+          <a href="science.html">Science</a>
+        </div>
+      </div>
+      <a href="studypack.html">StudyPack</a>
+      <a href="branch.html">Branch</a>
+      <a href="register.html">Register Now!</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h1>Discover Your Nearest Learning Hub!</h1>
+            <p>Empowering education, one student at a time.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Enter your location">
+                <button>Search</button>
+            </div>
+        </section>
+
+        <div class="content">
+            <!-- Sidebar with branch details -->
+            <aside class="details">
+            
+                <h2>Our Branches</h2>
+                <div class="branch">
+                    <h3>Kedah</h3>
+                    <p>Alor Setar, 05000 Kedah</p>
+                    <p>Email: kedah@thinkify.com</p>
+                    <p>Phone: 04-1234567</p>
+                </div>
+                <div class="branch">
+                    <h3>Melaka</h3>
+                    <p>Melaka Tengah, 75000 Melaka</p>
+                    <p>Email: melaka@thinkify.com</p>
+                    <p>Phone: 06-2345678</p>
+                </div>
+                <div class="branch">
+                    <h3>Perak</h3>
+                    <p>Ipoh, 30000 Perak</p>
+                    <p>Email: perak@thinkify.com</p>
+                    <p>Phone: 05-3456789</p>
+                </div>
+                <div class="branch">
+                    <h3>Kuala Lumpur</h3>
+                    <p>Setiawangsa, 54200 KL</p>
+                    <p>Email: kl@thinkify.com</p>
+                    <p>Phone: 03-4567890</p>
+                </div>
+                <div class="branch">
+                    <h3>Johor</h3>
+                    <p>Johor Bahru, 80000 Johor</p>
+                    <p>Email: johor@thinkify.com</p>
+                    <p>Phone: 07-5678901</p>
+                </div>
+            
+            </aside>
+
+            <!-- Map Section -->
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127093.38787091763!2d100.32982035140918!3d6.121928121706993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b6b7008bf84a3f%3A0x51e9df7cd4b564c8!2sAlor%20Setar%2C%20Kedah!5e0!3m2!1sen!2smy!4v1700000000000" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Kedah Map">
+                </iframe>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.736037865236!2d102.24550731492782!3d2.1896515072648687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdcf5b2aefb7af%3A0x40f311bfe7c20cbd!2sMelaka%20Tengah%2C%20Malacca!5e0!3m2!1sen!2smy!4v1700000000001" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Melaka Map">
+                </iframe>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31873.281048033373!2d101.06417331894755!3d4.597474212531585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31caec35d26f1fd9%3A0xb4f1cb810d2d2576!2sIpoh%2C%20Perak!5e0!3m2!1sen!2smy!4v1700000000002" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Perak Map">
+                </iframe>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31873.281048033373!2d101.73534676242478!3d3.2077693530124133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d4c51be765%3A0x8c0c8ed9b9aa83f6!2sSetiawangsa%2C%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1700000000003" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Kuala Lumpur Map">
+                </iframe>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254978.22437524986!2d103.63784428728166!3d1.4880526477118305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da13bc3ec85e63%3A0x2126713d2df6d1b5!2sJohor%20Bahru%2C%20Johor!5e0!3m2!1sen!2smy!4v1700000000004" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Johor Map">
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+  <!-- Footer Section -->
+  <div class="footer">
+<center>
+    <p>&copy; 2024 Thinkify. For assignment purpose only.</p>
+</center>
+  </div>
+
+</body>
+</html>
